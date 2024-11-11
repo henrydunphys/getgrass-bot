@@ -59,7 +59,7 @@ async def connect_to_wss(socks5_proxy, user_id):
                         except Exception as e:
                             print(e)
                             pass
-                        await asyncio.sleep(60)
+                        await asyncio.sleep(10)
 
                 asyncio.create_task(send_ping())
 
